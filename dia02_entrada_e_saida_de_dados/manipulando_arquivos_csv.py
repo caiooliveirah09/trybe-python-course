@@ -1,4 +1,5 @@
 import csv
+from decouple import config
 
 with open("graduacao_unb.csv", encoding="utf8") as file:
     graduacao_reader = csv.reader(file, delimiter=",", quotechar='"')
